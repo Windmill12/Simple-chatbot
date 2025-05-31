@@ -1,7 +1,7 @@
 # Simple-chatbot
 This tutorial project enables you to create a simple chatbot or agent using the popular open-source large language model Qwen2.5
 It has following files:
-1. finetune-conversation.py: finetunes Qwen model with distilled deepseek-R1 dataset. And the script also allows you to generate conversations with the model
+1. finetune-conversation.py: finetunes Qwen model with distilled deepseek-R1 dataset. And the script also allows you to generate conversations with the model. You need the dataset and Qwen model installed in your hard disk
 ## Prepare for environment:
 This project can be run in Windows or Linux, but Linux is recommanded. You may install the following packages:
 ```shell
