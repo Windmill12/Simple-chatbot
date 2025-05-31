@@ -1,7 +1,8 @@
 # Simple-chatbot
 This tutorial project enables you to create a simple chatbot or agent using the popular open-source large language model Qwen2.5
 It has following files:
-1. finetune-conversation.py: finetunes Qwen model with distilled deepseek-R1 dataset. And the script also allows you to generate conversations with the model. You need the dataset and Qwen model installed in your hard disk
+1. finetune-conversation.py: finetunes Qwen model with distilled deepseek-R1 dataset. And the script also allows you to generate conversations with the model. You need the dataset and Qwen model installed in your hard disk, and then modify the path of model and dataset to make it run 
+2. download.py: A script that allows you to download model and dataset from modelscope community. You may need to change the download path.
 ## Prepare for environment:
 This project can be run in Windows or Linux, but Linux is recommanded. You may install the following packages:
 ```shell
@@ -15,7 +16,7 @@ If you want to run quantized model in your PC, you may need to install bitsandby
 pip install bitsandbytes
 ```
 ## Run the script
-the script requires about 13.1GB GPU memory to run. Takes a day for QLora finetuning. A simple Conversation:
+the script requires about 13.1GB GPU memory to run. Takes a day for QLora finetuning in a RTX 4060Ti GPU. A simple Conversation:
 ```python
 User: Hello, I have a question, if I have to estimate the number sqrt(31) without a calculator, what method can I use to obtain a precise estimation?
 ChatBot:<think>
