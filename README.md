@@ -4,7 +4,7 @@ It has following files:
 1. finetune-conversation.py: finetunes Qwen model with distilled deepseek-R1 dataset. And the script also allows you to generate conversations with the model. You need the dataset and Qwen model installed in your hard disk, and then modify the path of model and dataset to make it run 
 2. download.py: A script that allows you to download model and dataset from modelscope community. You may need to change the download path.
 ## Prepare for environment:
-This project can be run in Windows or Linux, but Linux is recommanded. You may install the following packages:
+This project can be run in Windows or Linux, but Linux is recommended since there are some problems for running quantized models on Windows. You may install the following packages:
 ```shell
 pip install torch
 pip install peft
